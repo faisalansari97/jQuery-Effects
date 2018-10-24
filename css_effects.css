@@ -1,20 +1,45 @@
-  body{
-	  background-image: url("background.jpeg");
-	  background-size: 100%;
+*{
+	margin:0;
+    padding:0;
+} 
 
+
+ body{
+	  background-image:linear-gradient(rgba(255, 6, 6, 0.76),rgba(19, 19, 212, 0.8)), url("background.jpeg");
+	  height: 100vh;
+      background-size: cover;
+      background-attachment: fixed;
   }
-  .menu{
-	  position: relative;
-	  display: inline-block;
-  }
+ 
+     .menu{
+           position: relative;
+	       display: inline-block;
+          }
+
+     a{
+          display: inline-block;
+           border: 1px ;
+         border-radius: 30px;
+           cursor: pointer;
+           text-align: center;
+           text-decoration: none;
+           width: 60px;
+           background-color: #f6ff17;
+		  font-family:Lucida Sans Unicode;
+		  font-size:16px;
+}
 
        #drop{
-		   background-color: gold;
-		   color:midnightblue;
-		   padding:16px;
-		   border: 1px solid aliceblue;
-		   font-size: 16px;
-		   cursor: pointer;
+           display: block;
+           border: 1px ;
+           cursor: pointer;
+           margin: 2px;
+           text-align: center;
+           border-radius: 15px;
+           width: 100px;
+           background-color: #f7ab00;
+		  font-family:Lucida Sans Unicode;
+		  font-size:20px;
 	   }
 	    #submenu{
 			background-color: gold;
@@ -31,6 +56,8 @@
 
 
 		p1{
+            display: inline-block;
+            border-radius: 2px;
 		   font-style:bold;
 		   font-size:35px;
 		   text-color: darkmagenta;
@@ -43,50 +70,60 @@
 		   }
 
          [href="https://towardshack.blogspot.com"]{
-			color:lightgoldenrodyellow;
-			 font-weight: bolder;
+             display:block;
+             border-radius: 5px;
+             width: 700;
+             text-align: center;
+             margin-left: 300px;
+             border: 1px solid white;
+             background-color:#f5ff00;
+			 color:#00006d;
+			 font-weight: bold;
 			 font-size: 25px;
-             text-decoration:none;
-			 padding-left: 440px;
-
+             text-decoration: none;
 		}
+
+[href="https://towardshack.blogspot.com"]:hover{
+    color:#1111e0;
+}
 
 
 		p.second{
-			background-image: url("background1.png");
+        display: block;
+        margin-left:350px;
+        border-radius: 20px;
+        background-color: darkorange;
+        width: 600;
+        text-align: center;
 		font-family:Consolas;
-		border:2px solid white;
-		padding-right:400px;
-		text-align:center;
-		text-indent:8cm;
+		border:1px solid #dffcee;
 		font-style:oblique;
-		padding-bottom:20px;
-		padding-top:20px;
 		font-size:25px;
-			font-weight: bolder;
+        font-weight: bolder;
 		color:black;
 		}
 
   div.fname, div.sname{
-      color:white;
-      font-weight: bolder;
+      
+      color:black;
       font-family: DialogInput;
       font-size: 18px;
 
   }
   #fname,#sname{
-      color:ghostwhite;
-      font-weight: bolder;
+      display: block;
+      background-color: #ffba00;
+      padding: 5px;
+      border-radius: 2px;
+      color: black;
+      font-weight: bold;
   }
 
-
-
-
   #firstb, #secondb, #toggle, #fadeto, #slideup, #slidedown, #square,#squarestop,#text,#html,#val,#val1
-		,#stext,#shtml,#sval,#sval1,#rval,#rval1,#empty{
+		,#stext,#shtml,#sval,#sval1,#rval,#rval1,#empty, #attr, #sattr{
 			
 		font-family:Lucida Sans Unicode;
-		font-weight:bold;
+		font-weight:bolder;
 		margin:5px;
 		padding-left:30px;
 		padding-right:30px;
@@ -95,12 +132,14 @@
 		}
 
 		#animation{
-			background-color: gold;
+			background-color: #ffc400;
+            display: block;
+            border-bottom-right-radius: 300px;
+            border-top-right-radius: 300px;
 			height: 50px;
-			width:200px;
+			width: 50px;
 			position: absolute;
-			margin:20px;
-
+            margin: 20px;
 
 		}
 
