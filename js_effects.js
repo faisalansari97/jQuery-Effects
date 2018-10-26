@@ -4,6 +4,7 @@ $(document).ready(function() {
     $("#drop").click(function(){
      $("#submenu").slideToggle(500);
     });
+    
     $("#secondb").click(function(){
         $("p.second").fadeIn(1000);
 

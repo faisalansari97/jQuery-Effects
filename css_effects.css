@@ -3,6 +3,12 @@
     padding:0;
 } 
 
+html{
+    margin:0;
+}
+.container{
+    flex: auto;
+}
 
  body{
 	  background-image:linear-gradient(rgba(255, 6, 6, 0.76),rgba(19, 19, 212, 0.8)), url("background.jpeg");
@@ -29,9 +35,9 @@
 		  font-size:16px;
 }
 
-       #drop{
+       
+#drop{
            display: block;
-           border: 1px ;
            cursor: pointer;
            margin: 2px;
            text-align: center;
@@ -41,21 +47,24 @@
 		  font-family:Lucida Sans Unicode;
 		  font-size:20px;
 	   }
-	    #submenu{
+	    
+#submenu{
 			background-color: gold;
 			color:midnightblue;
 			display: none;
 			position: absolute;
-			min-width: 150px;
+			min-width: 100px;
 		}
-		  #submenu a{
+		 
+#submenu a{
 			  color:black;
-			  padding:12px 16px;
-			  display:block;
+              display: inline-block;
+              border-radius: 2px;
+              width:100%;
+              border: 1px solid red;
 		  }
 
-
-		p1{
+p1{
             display: inline-block;
             border-radius: 2px;
 		   font-style:bold;
@@ -64,18 +73,24 @@
             text-align: center;
 		   color:white;
 		   background-color:midnightblue;
-		   padding-left:370px;
-            padding-right: 412px;
+            width: 100%;
 		   font-family:Times New Roman;
 		   }
+
+#border{
+    display: inline-block;
+    border: 1px solid #00ebff;
+    width:20%;
+    margin-left: 37%;
+}
 
          [href="https://towardshack.blogspot.com"]{
              display:block;
              border-radius: 5px;
-             width: 700;
+             width:50%;
              text-align: center;
-             margin-left: 300px;
-             border: 1px solid white;
+             margin-left: 22%;
+             
              background-color:#f5ff00;
 			 color:#00006d;
 			 font-weight: bold;
@@ -90,41 +105,38 @@
 
 		p.second{
         display: block;
-        margin-left:350px;
         border-radius: 20px;
         background-color: darkorange;
-        width: 600;
+        width: 50%;
+        margin-left: 22%;
         text-align: center;
 		font-family:Consolas;
-		border:1px solid #dffcee;
 		font-style:oblique;
 		font-size:25px;
         font-weight: bolder;
 		color:black;
 		}
 
-  div.fname, div.sname{
-      
-      color:black;
-      font-family: DialogInput;
-      font-size: 18px;
-
-  }
-  #fname,#sname{
-      display: block;
-      background-color: #ffba00;
-      padding: 5px;
-      border-radius: 2px;
-      color: black;
+  #fname, #sname{
+      color: white;
+      display: inline-block;
+      padding: 7px;
+      text-align: center;
       font-weight: bold;
+      font-size: 16px;
   }
-
-  #firstb, #secondb, #toggle, #fadeto, #slideup, #slidedown, #square,#squarestop,#text,#html,#val,#val1
-		,#stext,#shtml,#sval,#sval1,#rval,#rval1,#empty, #attr, #sattr{
+#fname{
+    padding-right: 2%;
+    padding-left: 1%;
+}
+  
+  #firstb, #secondb, #toggle,#chain, #fadeto, #slideup, #slidedown, #square,#squarestop,#text,#html,#val, #attr, #val1
+		,#stext,#shtml,#sval, #sattr, #sval1,#rval,#rval1,#empty{
 			
 		font-family:Lucida Sans Unicode;
 		font-weight:bolder;
-		margin:5px;
+		margin-right:5px;
+        margin-bottom: 5px;
 		padding-left:30px;
 		padding-right:30px;
 		font-stretch:0px;
@@ -134,12 +146,17 @@
 		#animation{
 			background-color: #ffc400;
             display: block;
-            border-bottom-right-radius: 300px;
-            border-top-right-radius: 300px;
+            border: 1px solid yellow;
+            border-radius: 10px;
 			height: 50px;
-			width: 50px;
+			width: 100px;
+            color:black;
+            font-weight: bold;
+            text-align: center;
+            font-size: 10px;
 			position: absolute;
             margin: 20px;
+            padding-top: 10px;
 
 		}
 
