@@ -63,11 +63,11 @@ $(document).ready(function() {
     });
 
     $("#val").click(function () {
-        alert("value: "+ $("input.fname").val())
+        alert("value: "+ $("#ename").val())
     });
 
     $("#val1").click(function () {
-        alert("value: "+ $("input.sname").val())
+        alert("value: "+ $("#esname").val())
     });
 
     $("#stext").click(function () {
@@ -80,22 +80,24 @@ $(document).ready(function() {
 
     $("#sattr").click(function () {
          $("a").attr("href","https://google.com");
+         $("a").css({ "font-size":"30px", "display":"inline", "margin-left":"27%", "color":"yellow"});
+        $("a").text("Link changed to Google, Click here.");
     });
 
     $("#sval").click(function () {
-        $("input.fname").val("Faisal");
+        $("#ename").val("Faisal");
     });
 
     $("#sval1").click(function () {
-        $("input.sname").val("Ansari");
+        $("#esname").val("Ansari");
     });
 
     $("#rval").click(function () {
-        $("input.fname").remove();
+        $("#ename").val("");
     });
 
     $("#rval1").click(function () {
-        $("input.sname").remove();
+        $("#esname").val("");
     });
 
     $("#empty").click(function () {
