@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.wifipeer",
+      "sha256_cert_fingerprints":
+      ["CA:5E:BE:FB:CD:DC:F1:10:76:2F:83:5B:6F:A4:6C:42:AC:11:57:94:D7:79:6B:32:DC:B0:C1:0B:D1:8C:D1:1E"]
+    }
+  }]
